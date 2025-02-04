@@ -16,14 +16,13 @@ class Figura:
             areaFigura = b*h
             print("El area del cuadrado es: ", areaFigura)
         
-        #pentagono
-        if nLados == 5:
-            angulo = math.radians(36)
-            apotema = vLado / (2 * math.tan(angulo))
-            p = vLado * 5
+        #poligono regular
+        if nLados > 0:
+            angulo = math.radians(360 / (nLados * 2))
+            apotema = vLado / (2 * (math.tan(angulo)))
+            p = vLado * nLados
             areaFigura = (p * apotema) / 2
-            print(angulo)
-            print("El area del pentagono es: ", areaFigura)
+            print("El area de la figura es: ", areaFigura)
 
     def perimetro(nLados, vLado):
         if nLados == 3:
@@ -40,9 +39,5 @@ class Figura:
 
 #--------------------------------------------------------
 unaFigura = Figura
-unaFigura.area(3,4)
-unaFigura.perimetro(3,4)
 unaFigura.area(4,4)
 unaFigura.perimetro(4,4)
-unaFigura.area(5,4)
-unaFigura.perimetro(5,4)
