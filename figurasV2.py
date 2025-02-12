@@ -13,8 +13,8 @@ class Figura:
         return perimetroFigura
     
     def mostrarResultados():
-        print("El area de la figura es: ", area)
-        print("El perimetro de la figura es: ", perimetro)
+        print("El area de la figura es: ", area())
+        print("El perimetro de la figura es: ", perimetro())
 
 #--------------------------------------------------------
 unaFigura = Figura
