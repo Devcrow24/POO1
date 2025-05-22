@@ -1,40 +1,40 @@
 import math
 class Figura:
-    def area(nLados, vLado):
+    def area(numeroLados, valorLados):
         #Triangulo
-        if nLados == 3:
-            preH = (vLado/2)**2 + vLado**2
+        if numeroLados == 3:
+            preH = (valorLados/2)**2 + valorLados**2
             h = math.sqrt(preH)
-            b = vLado
+            b = valorLados
             areaFigura = (b*h)/2
             print("El area del triangulo es: ", areaFigura)
 
         #cuadrado
-        if nLados == 4:
-            b = vLado
-            h = vLado
+        if numeroLados == 4:
+            b = valorLados
+            h = valorLados
             areaFigura = b*h
             print("El area del cuadrado es: ", areaFigura)
         
         #poligono regular
-        if nLados > 0:
-            angulo = math.radians(360 / (nLados * 2))
-            apotema = vLado / (2 * (math.tan(angulo)))
-            p = vLado * nLados
+        if numeroLados > 0:
+            angulo = math.radians(360 / (numeroLados * 2))
+            apotema = valorLados / (2 * (math.tan(angulo)))
+            p = valorLados * numeroLados
             areaFigura = (p * apotema) / 2
             print("El area de la figura es: ", areaFigura)
 
-    def perimetro(nLados, vLado):
-        if nLados == 3:
-            perimetroFigura = vLado * 3
+    def perimetro(numeroLados, valorLados):
+        if numeroLados == 3:
+            perimetroFigura = valorLados * 3
             print("El perimetro del triangulo es: ", perimetroFigura)
         
-        if nLados == 4:
-            perimetroFigura = vLado * 4
+        if numeroLados == 4:
+            perimetroFigura = valorLados * 4
             print("El perimetro del cuadrado es: ", perimetroFigura)
         
-        if nLados == 5:
-            perimetroFigura = vLado * 5
+        if numeroLados == 5:
+            perimetroFigura = valorLados * 5
             print("El perimetro del pentagono es: ", perimetroFigura)
 
 #--------------------------------------------------------
