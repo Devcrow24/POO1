@@ -1,4 +1,4 @@
-# Diseño Avmzado de Clases
+# Diseño Avanzado de Clases
 
 ## Explicación
 Este codigo permite apreciar el funcionamiento de uno de los 4 pilares de la porgramación orientada a objetos en una forma mas avanzada utilizando librerias de Python. Con lo demostrado en las actividades pasadas con los 4 pilares de la programación, ahora se mejoran.
