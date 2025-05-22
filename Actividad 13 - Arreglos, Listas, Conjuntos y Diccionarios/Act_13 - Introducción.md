@@ -1,4 +1,4 @@
-# Encapsulamiento
+# Arreglos, Listas, Conjuntos y Diccionarios
 
 ## Explicación
 Este codigo permite apreciar el funcionamiento de las colleciones, lo que engloba arreglos, listas, conjuntos y diccionarios. la siguiente actividad se divide en tres apartados que contienen por separado cada una de las colecciones.
