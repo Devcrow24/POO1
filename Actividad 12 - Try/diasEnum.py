@@ -32,8 +32,8 @@ def verificar_dia(dia):
         print("Ejecución finalizada.")
 
 #---------------------------------------Iniciating programing
-verificar_dia("joyita de canción")     # Día válido
-verificar_dia("verdad que sii")   # Día válido
+verificar_dia("Miercoles")     # Día válido
+verificar_dia("JueVes")   # Día válido
 verificar_dia("Feriado")   # Error: Día no válido
 verificar_dia(123)         # Error de tipo
 
