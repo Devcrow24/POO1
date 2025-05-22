@@ -17,7 +17,7 @@ class Trabajador(Persona):
     def trabajar(self):
         print("Estoy trabajando como", self.ocupacion)
 
-#------------------------------------------------------
+#---------------------------------------Iniciating programing
 unRandom = Trabajador("Alex Turner", 26, "cantante de opera")
 unRandom.comer()
 unRandom.presentarse()

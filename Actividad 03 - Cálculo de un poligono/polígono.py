@@ -6,13 +6,13 @@ class Figura:
             apotema = vLado / (2 * (tan(angulo)))
             p = vLado * nLados
             areaFigura = (p * apotema) / 2
-        print ("El area de la figuranes", areaFigura)
+        return "El area de la figuranes", areaFigura
 
     def perimetro(nLados, vLado):
         perimetroFigura = vLado * nLados
-        print ("El perimetro de la figura es", perimetroFigura)
+        return "El perimetro de la figura es", perimetroFigura
 
-#--------------------------------------------------------
+#--------------------------------------------------------Iniciating programing
 unaFigura = Figura
-unaFigura.area(4,4)
-unaFigura.perimetro(4,4)
+print(unaFigura.area(4,4))
+print(unaFigura.perimetro(4,4))

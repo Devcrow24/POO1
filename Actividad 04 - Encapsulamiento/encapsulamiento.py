@@ -11,4 +11,6 @@ class CuentaDeBanco:
 tarjeta = CuentaDeBanco("Joan Sebastian", 1234, 500)
 print(tarjeta.nombre)
 print(tarjeta.mostrarSaldo())
+
+#Si se desactiva la siguiente linea, el codigo lanzará un error.
 #print(tarjeta.__nip)

@@ -15,7 +15,7 @@ class Primario(Actor):
         print("Hola soy ", self.personaje, " y soy el ", self.papel, " de la historia")
 
 
-#-----------------------------------------------------------
+#---------------------------------------Iniciating programing
 unRandom = Villano("Rupelstinski", "antagonista")
 otroRandom = Primario("Shrek", "Protagonista")
 unRandom.decirDialogo()

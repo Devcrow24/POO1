@@ -1,43 +1,49 @@
+#Abdiel Muñiz
+#9/01/2025
+
 import math
 class Figura:
-    def area(numeroLados, valorLados):
+    def area(nLados, vLados):
         #Triangulo
-        if numeroLados == 3:
-            preH = (valorLados/2)**2 + valorLados**2
+        if nLados == 3:
+            preH = (vLados/2)**2 + vLados**2
             h = math.sqrt(preH)
-            b = valorLados
+            b = vLados
             areaFigura = (b*h)/2
-            print("El area del triangulo es: ", areaFigura)
+            return "El area del triangulo es: ", areaFigura
 
         #cuadrado
-        if numeroLados == 4:
-            b = valorLados
-            h = valorLados
+        if nLados == 4:
+            b = vLados
+            h = vLados
             areaFigura = b*h
-            print("El area del cuadrado es: ", areaFigura)
+            return "El area del cuadrado es: ", areaFigura
         
         #poligono regular
-        if numeroLados > 0:
-            angulo = math.radians(360 / (numeroLados * 2))
-            apotema = valorLados / (2 * (math.tan(angulo)))
-            p = valorLados * numeroLados
+        if nLados > 0:
+            angulo = math.radians(360 / (nLados * 2))
+            apotema = vLados / (2 * (math.tan(angulo)))
+            p = vLados * nLados
             areaFigura = (p * apotema) / 2
-            print("El area de la figura es: ", areaFigura)
+            return "El area de la figura es: ", areaFigura
 
-    def perimetro(numeroLados, valorLados):
-        if numeroLados == 3:
-            perimetroFigura = valorLados * 3
-            print("El perimetro del triangulo es: ", perimetroFigura)
+    def perimetro(nLados, vLados):
+        #Triangulo
+        if nLados == 3:
+            perimetroFigura = vLados * 3
+            return "El perimetro del triangulo es: ", perimetroFigura
         
-        if numeroLados == 4:
-            perimetroFigura = valorLados * 4
-            print("El perimetro del cuadrado es: ", perimetroFigura)
+        #Cuadrado
+        if nLados == 4:
+            perimetroFigura = vLados * 4
+            return "El perimetro del cuadrado es: ", perimetroFigura
         
-        if numeroLados == 5:
-            perimetroFigura = valorLados * 5
-            print("El perimetro del pentagono es: ", perimetroFigura)
+        #Pentagono
+        if nLados == 5:
+            perimetroFigura = vLados * 5
+            return "El perimetro del pentagono es: ", perimetroFigura
 
-#--------------------------------------------------------
+#--------------------------------------------------------Iniciating programing
 unaFigura = Figura
-unaFigura.area(4,4)
-unaFigura.perimetro(4,4)
+print(unaFigura.area(4,4))
+print(unaFigura.perimetro(4,4))

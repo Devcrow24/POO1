@@ -5,6 +5,8 @@ class Season(Enum):
     SUMMER = 2
     AUTUMN = 3
     WINTER = 4
+
+#---------------------------------------Iniciating programing
 print(Season.SPRING)
 print(Season.SPRING.name)
 print(Season.SPRING.value)
